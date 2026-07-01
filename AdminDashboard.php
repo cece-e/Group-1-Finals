@@ -7,15 +7,10 @@
 
     <link rel="stylesheet" href="../css/admin_dashboard.css">
 
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-<!-- ==========================
-        SIDEBAR
-========================== -->
 
 <div class="sidebar">
 
@@ -77,13 +72,7 @@
 
 </div>
 
-<!-- ==========================
-        MAIN CONTENT
-========================== -->
-
 <div class="main">
-
-    <!-- Header -->
 
     <div class="header">
 
@@ -107,8 +96,6 @@
         </div>
 
     </div>
-
-    <!-- Dashboard Cards -->
 
     <div class="cards">
 
@@ -184,10 +171,6 @@
 
     </div>
 
-    <!-- ==========================
-            MANAGE PETS
-    ========================== -->
-
     <div class="table-container">
 
         <div class="table-header">
@@ -209,8 +192,6 @@
             </a>
 
         </div>
-
-        <!-- Search & Filter -->
 
         <div class="toolbar">
 
@@ -247,7 +228,6 @@
 
         </div>
 
-        <!-- Pets Table -->
 
         <table>
 
@@ -441,10 +421,6 @@
 
     </div>
 
-    <!-- ==========================
-        RECENT ADOPTION REQUESTS
-    ========================== -->
-
     <div class="table-container">
 
         <div class="table-header">
@@ -602,10 +578,6 @@
         </table>
 
     </div>
-
-    <!-- ==========================
-        FOOTER
-    ========================== -->
 
     <footer class="footer">
 
