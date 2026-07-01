@@ -1,0 +1,505 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#F5F7F5;
+    color:#172B23;
+}
+
+/* ================= Sidebar ================= */
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:260px;
+    height:100vh;
+    background:#0D130E;
+    color:#fff;
+}
+
+.logo{
+    text-align:center;
+    padding:30px 20px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo i{
+    font-size:45px;
+    color:#2F6542;
+    margin-bottom:10px;
+}
+
+.logo h2{
+    font-size:24px;
+}
+
+.logo p{
+    color:#bdbdbd;
+    font-size:14px;
+}
+
+.sidebar ul{
+    list-style:none;
+    margin-top:25px;
+}
+
+.sidebar ul li{
+    margin:8px 15px;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:white;
+    padding:15px 18px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.sidebar ul li.active a,
+.sidebar ul li a:hover{
+
+    background:#2F6542;
+
+}
+
+.sidebar i{
+    width:20px;
+    text-align:center;
+}
+
+/* ================= Main ================= */
+
+.main{
+
+    margin-left:260px;
+    padding:35px;
+
+}
+
+/* ================= Header ================= */
+
+.header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+
+}
+
+.header h1{
+
+    font-size:32px;
+    color:#172B23;
+
+}
+
+.header p{
+
+    color:#777;
+
+}
+
+.profile{
+
+    background:white;
+    padding:12px 18px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.profile i{
+
+    color:#2F6542;
+    font-size:22px;
+
+}
+
+/* ================= Dashboard Cards ================= */
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-bottom:35px;
+
+}
+
+.card{
+
+    background:white;
+    border-left:6px solid #2F6542;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    display:flex;
+    align-items:center;
+    gap:20px;
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.card-icon{
+
+    width:65px;
+    height:65px;
+    background:#2F6542;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.card-icon i{
+
+    color:white;
+    font-size:28px;
+
+}
+
+.card h3{
+
+    color:#666;
+    margin-bottom:8px;
+
+}
+
+.card h2{
+
+    color:#2F6542;
+    font-size:34px;
+
+}
+
+/* ================= Tables ================= */
+
+.table-container{
+
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:35px;
+
+}
+
+.table-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+
+}
+
+.table-header h2{
+
+    color:#172B23;
+
+}
+
+.table-header p{
+
+    color:#888;
+    margin-top:5px;
+
+}
+
+/* ================= Toolbar ================= */
+
+.toolbar{
+
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+
+}
+
+.search-box{
+
+    flex:1;
+    min-width:250px;
+    padding:12px 15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+
+}
+
+.filter{
+
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+/* ================= Buttons ================= */
+
+.btn-add,
+.btn-edit,
+.btn-delete,
+.btn-approve,
+.btn-reject,
+.btn-view{
+
+    text-decoration:none;
+    color:white;
+    padding:10px 16px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:500;
+    transition:.3s;
+    display:inline-block;
+
+}
+
+.btn-add{
+
+    background:#2F6542;
+
+}
+
+.btn-add:hover{
+
+    background:#172B23;
+
+}
+
+.btn-edit{
+
+    background:#3498db;
+    margin-right:5px;
+
+}
+
+.btn-edit:hover{
+
+    background:#2874a6;
+
+}
+
+.btn-delete{
+
+    background:#c0392b;
+
+}
+
+.btn-delete:hover{
+
+    background:#922b21;
+
+}
+
+.btn-approve{
+
+    background:#2F6542;
+    margin-right:5px;
+
+}
+
+.btn-approve:hover{
+
+    background:#172B23;
+
+}
+
+.btn-reject{
+
+    background:#c0392b;
+
+}
+
+.btn-reject:hover{
+
+    background:#922b21;
+
+}
+
+.btn-view{
+
+    background:#7f8c8d;
+
+}
+
+.btn-view:hover{
+
+    background:#616a6b;
+
+}
+
+/* ================= Table ================= */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+table th{
+
+    background:#2F6542;
+    color:white;
+    padding:15px;
+
+}
+
+table td{
+
+    text-align:center;
+    padding:15px;
+    border-bottom:1px solid #eee;
+
+}
+
+table tbody tr:hover{
+
+    background:#f8f8f8;
+
+}
+
+/* ================= Pet Image ================= */
+
+.pet-image{
+
+    width:60px;
+    height:60px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid #2F6542;
+
+}
+
+/* ================= Status ================= */
+
+.badge{
+
+    padding:6px 14px;
+    border-radius:20px;
+    color:white;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+.available{
+
+    background:#2F6542;
+
+}
+
+.pending{
+
+    background:#d68910;
+
+}
+
+.adopted{
+
+    background:#c0392b;
+
+}
+
+/* ================= Footer ================= */
+
+.footer{
+
+    text-align:center;
+    color:#777;
+    padding:20px;
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:900px){
+
+.sidebar{
+
+    width:210px;
+
+}
+
+.main{
+
+    margin-left:210px;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.sidebar{
+
+    position:relative;
+    width:100%;
+    height:auto;
+
+}
+
+.main{
+
+    margin-left:0;
+
+}
+
+.header{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.toolbar{
+
+    flex-direction:column;
+
+}
+
+table{
+
+    display:block;
+    overflow-x:auto;
+
+}
+
+}
